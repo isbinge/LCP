@@ -1,0 +1,62 @@
+.container {
+  .selectInput {
+    height: 110px;
+    padding: 5px 5px 1px 5px;
+    overflow: auto;
+    background: #fff;
+    border: 1px solid #e0e3e9;
+    border-radius: 4px;
+  }
+  :global(.ant-tree-treenode) {
+    width: 100%;
+  }
+  :global(.ant-tree-node-content-wrapper) {
+    width: 100%;
+    &:hover {
+      background-color: #e6f6ff;
+    }
+  }
+  .content {
+    position: relative;
+    display: flex;
+    height: 272px;
+    margin-top: 16px;
+    padding: 10px;
+    border: 1px solid #e0e3e9;
+    border-radius: 4px;
+
+    .depts {
+      width: 390px;
+      overflow: auto;
+      border-right: 1px solid #e0e3e9;
+    }
+    .members {
+      width: 202px;
+      overflow: auto;
+      &[data-loading='true'] {
+        margin-top: 40px;
+      }
+      .checkListWrapper {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        .gutterRow {
+          height: 32px;
+          line-height: 32px;
+          cursor: pointer;
+          &:hover {
+            background-color: #f4f8fc;
+          }
+          :global(.ant-checkbox-wrapper) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

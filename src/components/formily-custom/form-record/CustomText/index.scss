@@ -1,0 +1,13 @@
+@import '../common';
+
+.container {
+  color: $text-color;
+  line-height: 1.5;
+  .controlTitle {
+    @extend %title-shared;
+  }
+  .controlContent {
+    padding: 8px;
+    font-size: 15px;
+  }
+}

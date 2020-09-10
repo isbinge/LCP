@@ -1,0 +1,33 @@
+.title {
+  margin-bottom: 8px;
+  color: #2f4265;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.itemGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  animation: bounceOut 0.3s backwards;
+  @keyframes bounceOut {
+    0% {
+      box-shadow: none;
+      transform: scale(0.9);
+      opacity: 0.75;
+    }
+    25% {
+      transform: scale(0.95);
+    }
+    75% {
+      transform: scale(1.05);
+    }
+    100% {
+      box-shadow: unset;
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}

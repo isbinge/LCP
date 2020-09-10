@@ -1,0 +1,18 @@
+.row {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+
+  .title {
+    min-width: 80px;
+    padding-right: 10px;
+    text-align: right;
+    .require {
+      color: red;
+    }
+  }
+
+  .content {
+    flex: 1;
+  }
+}

@@ -1,0 +1,6 @@
+.wrapper {
+  overflow-y: hidden;
+  :global(::-webkit-scrollbar) {
+    width: 0;
+  }
+}

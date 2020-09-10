@@ -1,0 +1,47 @@
+.wrapper {
+  padding: 8px 0;
+  background: #fff;
+  box-shadow: $app-box-shadow;
+}
+
+.list {
+  display: flex;
+  margin: 0 32px;
+  margin-bottom: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.appButtonContainer {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  color: map-get($lcp-text-color, 'primary');
+  border-radius: 8px;
+  &:hover {
+    background: $fd-btn-hover-bg;
+  }
+  &:active {
+    background: $fd-btn-active-bg;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+  .appName {
+    flex: 1;
+    max-width: 100px;
+    margin: 0 2px 0 10px;
+    margin-left: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font: {
+      size: 16px;
+    }
+  }
+}

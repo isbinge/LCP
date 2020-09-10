@@ -1,0 +1,39 @@
+.appFuncBar {
+  @include flex-row-center;
+
+  .homeButton {
+    @include flex-col-center;
+
+    width: 32px;
+    height: 32px;
+    color: #636e7b;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    border-radius: 4px;
+    box-shadow: 0 0 8px 0 #d0daf0;
+    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0 0 12px 0 #c8d3eb;
+    }
+  }
+
+  .appName {
+    margin: 0 16px;
+    cursor: pointer;
+    &:hover {
+      color: rgba(48, 66, 101, 0.85);
+    }
+  }
+
+  .menuItem {
+    width: 136px;
+  }
+
+  .settingStyle {
+    top: 44 !important;
+  }
+
+  .remarkText {
+    color: rgb(136, 147, 167);
+  }
+}

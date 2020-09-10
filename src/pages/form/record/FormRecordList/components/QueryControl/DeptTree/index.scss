@@ -1,0 +1,47 @@
+.overlay {
+  position: relative;
+  width: 500px;
+  margin: 0;
+  padding: 4px 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  text-align: left;
+  list-style: none;
+  list-style-type: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-feature-settings: 'tnum';
+  &:hover {
+    .menu::-webkit-scrollbar {
+      display: block;
+    }
+  }
+
+  .search {
+    display: flex;
+    flex: 1;
+    width: auto;
+    margin: 0 4px;
+  }
+
+  .tabs {
+    margin: 0 8px;
+    .tabPane {
+      display: flex;
+      flex-direction: row;
+      height: 250px;
+    }
+  }
+}
+
+.ph {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  opacity: 0.4;
+}

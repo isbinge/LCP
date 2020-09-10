@@ -1,0 +1,15 @@
+.loading {
+  margin-left: 10px;
+  color: map-get($lcp-theme-color, 'primary');
+}
+
+// .pane {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+.empty {
+  @include flex-col-center;
+
+  width: 100%;
+}

@@ -1,0 +1,19 @@
+.wrapper {
+  position: absolute;
+  top: 92px;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 24px;
+  background: $fd-bgcolor;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+
+  & :global(.ant-card),
+  & div > :global(.ant-card) {
+    box-shadow: $app-box-shadow;
+  }
+}

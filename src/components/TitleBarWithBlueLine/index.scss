@@ -1,0 +1,14 @@
+.title {
+  padding-left: 10px;
+  line-height: 22px;
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 4px;
+    height: 16px;
+    background: linear-gradient(44deg, #2552ff, #3995ff);
+    border-radius: 2px;
+    content: '';
+  }
+}

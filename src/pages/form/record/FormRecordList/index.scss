@@ -1,0 +1,55 @@
+.wrapper {
+  height: 100%;
+  padding: 12px;
+  overflow-x: auto;
+
+  .topButtonBar {
+    @include flex-row;
+
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    .deleteButton {
+      &:hover {
+        color: #40a9ff;
+        cursor: pointer;
+      }
+      .deleteIcon {
+        color: #8893a7;
+      }
+    }
+  }
+
+  ul:first-child {
+    // margin-bottom: 16px;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+  }
+}
+
+.container {
+  @include flex-col-center;
+
+  flex: 1;
+  height: 100%;
+}
+
+.pagination {
+  position: absolute;
+  right: 15px;
+  bottom: 3px;
+}
+
+.draftCircle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #bee098;
+  border: 1px solid #70c317;
+  border-radius: 12px;
+}

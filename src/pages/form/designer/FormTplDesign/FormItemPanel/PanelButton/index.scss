@@ -1,0 +1,19 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 108px;
+  height: 32px;
+  margin: 2px 4px;
+  color: #304265;
+  background: #f4f8fc;
+  cursor: grabbing;
+  &:hover {
+    background: #e7f2fd;
+  }
+
+  font: {
+    size: 13px;
+    weight: 500;
+  }
+}

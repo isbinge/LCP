@@ -1,0 +1,29 @@
+.container {
+  @include flex-col-center;
+
+  height: 100%;
+
+  h2 {
+    margin: 50px 0;
+    font-weight: 200;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .btnGroup {
+    @include flex-row;
+
+    justify-content: center;
+    padding-bottom: 50px;
+
+    :global(.ant-btn) {
+      margin-right: 8px;
+    }
+  }
+
+  .footer {
+    padding-bottom: 20px;
+    color: $neutral-secondary;
+    text-align: center;
+  }
+}

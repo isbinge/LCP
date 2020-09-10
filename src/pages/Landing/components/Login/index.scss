@@ -1,0 +1,56 @@
+.loginContainer {
+  position: relative;
+  width: 360px;
+  height: 92px;
+  padding: 25px 32px;
+  overflow: hidden;
+  background: #fffc;
+  border-radius: 4px;
+  transition: height 0.5s ease-in-out;
+
+  :global {
+    .ant-form-item {
+      margin-bottom: 10px !important;
+    }
+    .ant-form-item-with-help {
+      margin-bottom: 0 !important;
+    }
+    .ant-form-item-explain,
+    .ant-form-item-extra {
+      min-height: 16px !important;
+      line-height: 0 !important;
+    }
+  }
+
+  &::after {
+    margin: -30px;
+    backdrop-filter: saturate(180%) blur(30px);
+  }
+
+  .password {
+    height: 40px;
+    margin-top: 16px;
+    animation: pwdIn 0.5s;
+    @keyframes pwdIn {
+      0% {
+        opacity: 0;
+      }
+      15% {
+        transform: translate(0, -20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+  }
+  &[data-login-status='login'],
+  &[data-login-status='reset-passwd-verify'] {
+    height: 178px;
+  }
+  &[data-login-status='signup'],
+  &[data-login-status='reset-passwd-set-new'] {
+    height: 136px;
+  }
+}

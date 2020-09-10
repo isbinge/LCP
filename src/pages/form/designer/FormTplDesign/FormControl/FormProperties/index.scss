@@ -1,0 +1,17 @@
+.container {
+  padding: 0 16px;
+  padding-top: 16px;
+  overflow: auto;
+
+  :global {
+    .ant-form-item-label > label::after {
+      content: '';
+    }
+    .ant-form-item-children textarea {
+      resize: none;
+    }
+    .ant-col.ant-form-item-control {
+      width: 100%;
+    }
+  }
+}

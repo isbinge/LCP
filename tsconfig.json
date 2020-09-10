@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "esnext",
+    "target": "es2019",
+    "lib": ["dom", "dom.iterable", "esnext", "esnext.intl", "es2017.intl", "es2018.intl"],
+    "jsx": "react",
+    "baseUrl": ".",
+    "noEmit": false,
+    "strict": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "incremental": true,
+    "noUnusedLocals": true,
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@lib/*": ["./src/utils/lib/*"],
+      "@comp/*": ["./src/components/*"],
+      "@/*": ["./src/*"]
+    },
+    "typeRoots": ["./node_modules/@types", "src/typings"]
+  },
+  "include": ["./src/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "scripts",
+    "webpack",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "assets"
+  ]
+}

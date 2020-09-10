@@ -1,0 +1,18 @@
+@import '../common';
+
+%flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  @extend %flexRow;
+
+  align-items: center;
+  .title {
+    @extend %flexRow;
+    @extend %title-shared;
+
+    width: 98%;
+  }
+}

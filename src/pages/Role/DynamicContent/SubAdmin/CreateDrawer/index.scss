@@ -1,0 +1,26 @@
+@import '../../shared/common';
+@import '../../components/Card';
+
+.button {
+  margin-right: 10px;
+}
+
+.goBack {
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.text {
+  width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

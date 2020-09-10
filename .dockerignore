@@ -1,0 +1,22 @@
+# dependencies
+**/node_modules
+
+# ide
+/.vscode
+/.idea
+
+# logs
+npm-debug.log*
+yarn-error.log
+*.log
+
+# misc
+.DS_Store
+/tmp
+.env
+.env.*
+.git
+
+# dist
+/dist
+/coverage

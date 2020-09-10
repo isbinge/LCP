@@ -1,0 +1,8 @@
+@import '../../common';
+
+.updateMemberMdl {
+  :global(.ant-modal-body) {
+    justify-content: center;
+    @include flex-col;
+  }
+}

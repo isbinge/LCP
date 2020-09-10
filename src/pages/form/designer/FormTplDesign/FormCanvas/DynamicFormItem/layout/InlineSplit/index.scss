@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 80px;
+  .subContainer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font: {
+      size: 24px;
+    }
+    &:hover {
+      background: #f0f6fe;
+    }
+  }
+}

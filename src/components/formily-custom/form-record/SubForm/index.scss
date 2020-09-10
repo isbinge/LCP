@@ -1,0 +1,30 @@
+@import '../common';
+.header {
+  .title {
+    @extend %title-shared;
+
+    margin-right: 4px;
+  }
+}
+.toolbars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  margin-bottom: 24px;
+  .content {
+    margin: 16px 0;
+    :nth-child(1) {
+      margin-right: 8px;
+    }
+  }
+  .toolbarsMore {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+    > span {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+export const DndItemType = {
+  form: {
+    BASIC_COMPS: 'BASIC_COMPS',
+    LAYOUT_COMPS: 'LAYOUT_COMPS',
+    SYSTEM_COMPS: 'SYSTEM_COMPS',
+    ADVANCED_COMPS: 'ADVANCED_COMPS',
+  },
+};

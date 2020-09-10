@@ -1,0 +1,100 @@
+$loading-color: #1070ff;
+
+.loadingWaveRaw {
+  > div {
+    display: inline-block;
+    background-color: $loading-color;
+    border-radius: 2px;
+    animation-fill-mode: both;
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        animation: loading-wave 1s $i * 0.1s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+      }
+    }
+    @keyframes loading-wave {
+      0% {
+        transform: scaleY(1);
+      }
+      50% {
+        transform: scaleY(0.5);
+      }
+      100% {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  &[data-size='large'] {
+    > div {
+      width: 4px;
+      height: 35px;
+      margin: 2px;
+    }
+  }
+
+  &[data-size='medium'] {
+    > div {
+      width: 3px;
+      height: 28px;
+      margin: 1.5px;
+    }
+  }
+
+  &[data-size='small'] {
+    > div {
+      width: 2px;
+      height: 18px;
+      margin: 1px;
+    }
+  }
+}
+
+.filled {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 68px;
+  margin-top: -34px;
+  margin-left: -125px;
+}
+
+.wrapper {
+  @include flex-col-center;
+  .indicator {
+    color: $loading-color;
+    &[data-size='large'] {
+      font-size: 30px;
+    }
+    &[data-size='medium'] {
+      font-size: 22px;
+    }
+    &[data-size='small'] {
+      font-size: 14px;
+    }
+  }
+  .message {
+    margin-top: 8;
+    color: $loading-color;
+  }
+  .animated {
+    &::after {
+      animation: loading-text 2s infinite;
+      content: '';
+    }
+  }
+  @keyframes loading-text {
+    25% {
+      content: '.';
+    }
+    50% {
+      content: '..';
+    }
+    75% {
+      content: '...';
+    }
+    100% {
+      content: '';
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@import '../common.scss';
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: auto;
+  background: #f5f7fa;
+
+  .item {
+    color: #304265;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .deptWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+    .moreButton {
+      visibility: hidden;
+    }
+    span {
+      padding-left: 4px;
+    }
+    &:hover {
+      .moreButton {
+        font-size: 18px;
+        visibility: visible;
+      }
+    }
+  }
+  :global(.ant-tree-treenode) {
+    > span {
+      height: 36px;
+      line-height: 36px;
+    }
+  }
+  :global(.ant-menu) {
+    > li {
+      padding-left: 15px !important;
+    }
+    li:last-child {
+      cursor: initial;
+    }
+  }
+  :global(.ant-tree-node-selected) {
+    position: relative;
+    background-color: #e9f7fe !important;
+    ::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-right: 3px solid #1890ff;
+      content: '';
+    }
+  }
+}
+
+.deleteModal {
+  width: 540px !important;
+  padding: 0 16px;
+  .deleteContent {
+    > h2 {
+      color: #f54d47 !important;
+    }
+    p {
+      padding: 16px 0 12px;
+    }
+    ul {
+      text-indent: 25px;
+      .queryItem {
+        text-align: left;
+      }
+    }
+  }
+  :global(.ant-modal-body) {
+    padding: 16px 32px 20px;
+  }
+}

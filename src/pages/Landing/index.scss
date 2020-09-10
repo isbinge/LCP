@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans:wght@300&display=swap');
+
+.wrapper {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('~@/assets/landing/landing-bg.jpg') no-repeat center;
+    background-size: cover;
+    transform: rotateY(180deg);
+    filter: opacity(75%);
+    content: '';
+  }
+
+  height: 100%;
+  .header {
+    @include flex-row-center;
+
+    position: absolute;
+    width: 100%;
+    padding: 12px 24px;
+    .logo {
+      position: relative;
+      display: inline-block;
+      height: 61px;
+      padding-left: 70px;
+      line-height: 61px;
+      span {
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.5px;
+        &::before {
+          position: absolute;
+          top: 21px;
+          left: 53px;
+          width: 1px;
+          height: 20px;
+          background: #fff;
+          content: '';
+        }
+      }
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('~@/assets/lcp_logo.svg') no-repeat left center;
+        background-size: 35px 50px;
+        filter: saturate(0%) contrast(100%) brightness(200%);
+        content: '';
+      }
+    }
+  }
+
+  .content {
+    @include flex-row;
+
+    position: absolute;
+    top: 50%;
+    align-items: center;
+    width: 100%;
+    height: 381px;
+    margin-top: -150px;
+    padding: 0 48px;
+    color: #fff;
+
+    @media screen and (max-width: 920px) {
+      justify-content: center;
+    }
+
+    .sloganContainer {
+      display: inline-block;
+      flex: 1;
+      @media screen and (max-width: 920px) {
+        display: none;
+      }
+      .sloganLine1 {
+        font-size: 2.25rem;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1;
+        @media screen and (max-width: 1200px) {
+          font-size: 2em;
+        }
+      }
+
+      .sloganLine2 {
+        @extend .sloganLine1;
+
+        margin-top: 10px;
+      }
+      .desc {
+        margin-top: 15px;
+        font-size: 1.2rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1;
+      }
+    }
+  }
+}

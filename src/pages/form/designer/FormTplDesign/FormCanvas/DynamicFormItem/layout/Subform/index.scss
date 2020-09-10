@@ -1,0 +1,132 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.subformContent {
+  @include flex-row;
+
+  flex-wrap: nowrap;
+  .leftFixed {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    :nth-child(2) {
+      flex: 1;
+    }
+    > div {
+      @include flex-row;
+
+      @mixin cell-common {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        border: 1px;
+        border-color: #d4d7e0;
+        border-style: solid;
+      }
+      .firstFixedCell {
+        @include cell-common();
+
+        height: 38px;
+        background-color: #f9fbfd;
+        border-right: 0;
+        border-top-left-radius: 4px;
+      }
+      .secondFixedCell {
+        @include cell-common();
+
+        height: 38px;
+        background-color: #fff;
+      }
+      .threeFixedCell {
+        @include cell-common();
+
+        min-height: 38px;
+        background-color: #f9fbfd;
+        border-top: 0;
+        border-right: 0;
+        border-bottom-left-radius: 4;
+      }
+      .fourFixedCell {
+        @include cell-common();
+
+        min-height: 38px;
+        background-color: #fff;
+        border-top: 0;
+      }
+    }
+  }
+  > .dynamicContent {
+    @include flex-row;
+
+    // max-width: 1090px;
+    padding-top: 10px;
+    overflow-x: auto;
+
+    .hoverBG {
+      width: 120px;
+      height: 100%;
+      background-color: #d9eaff;
+    }
+    .itemWrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 200px;
+      height: 100%;
+      cursor: grabbing !important;
+      user-select: none;
+      &:hover {
+        background: #f6f8fc;
+      }
+    }
+    .selected {
+      $selected-bg: #e9f3fd;
+      border: {
+        width: 1px;
+        style: dashed;
+        color: #107fff;
+      }
+
+      background: $selected-bg;
+      &:hover {
+        background: $selected-bg;
+      }
+    }
+
+    .rightFixed {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 220px;
+      min-width: 220px;
+      height: 100%;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #d4d7e0;
+      border-left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .dynamicContent {
+    max-width: 1260px;
+  }
+}
+@media screen and (max-width: 2000px) {
+  .dynamicContent {
+    max-width: 1090px;
+  }
+}
+@media screen and (max-width: 1750px) {
+  .dynamicContent {
+    max-width: 860px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .dynamicContent {
+    max-width: 660px;
+  }
+}

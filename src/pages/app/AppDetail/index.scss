@@ -1,0 +1,114 @@
+$menu-bgcolor: #f5f8fc;
+
+.layout {
+  @include flex-col;
+
+  height: 100%;
+  .navText {
+    @include tof;
+
+    margin-left: 8px;
+    text-align: left;
+  }
+
+  .layoutHasSider {
+    position: relative;
+    flex: 1;
+    .sider {
+      @include flex-col;
+
+      height: 100%;
+      :global(.ant-layout-sider-children) {
+        @include flex-col;
+
+        height: 100%;
+      }
+      .createMenu {
+        background-color: $menu-bgcolor;
+        .menuItem {
+          height: 40px;
+          margin: 0;
+          text-align: center;
+        }
+      }
+      .appDetailMenu {
+        display: flex;
+        flex: 1;
+        &::-webkit-scrollbar {
+          width: 0;
+          height: 5px;
+        }
+        &::-webkit-scrollbar-track-piece {
+          background-color: rgb(245, 247, 250);
+        }
+        &::-webkit-scrollbar-thumb {
+          background: linear-gradient(180deg, #c7c7c7, #ccc);
+          border-radius: 3px;
+        }
+        &::-webkit-scrollbar-corner {
+          background: rgba(0, 0, 0, 0);
+        }
+        &::-webkit-scrollbar-button {
+          width: 0;
+          height: 0;
+        }
+        &:hover {
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+        }
+        .formTitleMenu {
+          flex: 1;
+          overflow-x: hidden;
+          overflow-y: auto;
+          line-height: 48px;
+          background-color: $menu-bgcolor;
+          .menuItem {
+            .navText {
+              @include tof;
+
+              margin-left: 8px;
+              text-align: left;
+            }
+            .icon {
+              z-index: 999;
+              color: '#AAB5C4';
+              opacity: 0;
+              &:hover {
+                color: rgb(16, 127, 255) !important;
+              }
+            }
+            &:hover {
+              .icon {
+                display: block;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .layoutContent {
+      background-color: #fff;
+    }
+  }
+}
+
+.bottomBar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 12px;
+  border-top: 1px solid #e2e6e8;
+
+  .formName {
+    padding-left: 20px;
+    color: #304265;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+.dropdownItem {
+  width: 136px;
+}

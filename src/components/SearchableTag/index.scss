@@ -1,0 +1,12 @@
+.container {
+  min-height: 35px;
+  padding: 5px;
+  border: 1px solid $neutral-border;
+  .input {
+    margin-left: 5px;
+    border-width: 0;
+    &:focus {
+      outline: 0;
+    }
+  }
+}

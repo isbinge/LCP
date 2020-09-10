@@ -1,0 +1,51 @@
+// 默认文字颜色
+$lcp-theme-color: (
+  'primary': #107fff,
+);
+$lcp-text-color: (
+  'primary': #304265 !important,
+  'inactive': #64728c,
+  'extra': #8893a7,
+);
+
+// Form Designer 背景色
+$fd-bgcolor: #f3f5f8;
+// Form Designer 按钮悬浮
+$fd-btn-hover-bg: #f7fafc;
+// Form Designer 按钮按下
+$fd-btn-active-bg: #f0f3f7;
+// App box shadow
+$app-box-shadow: 0 0 8px 0 #e0e5f0;
+
+// 导航栏高度
+$nav-height: 52px;
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-col-center {
+  @include flex-col;
+
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-row-center {
+  @include flex-row;
+
+  align-items: center;
+}
+
+/* 文本溢出省略 */
+@mixin tof {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

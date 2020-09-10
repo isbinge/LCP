@@ -1,0 +1,11 @@
+.group {
+  @include tof;
+
+  width: 100%;
+  .row {
+    @include tof;
+
+    width: 100%;
+    padding: 4px 0 !important;
+  }
+}

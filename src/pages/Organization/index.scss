@@ -1,0 +1,39 @@
+@import './common.scss';
+
+.container {
+  @include flex-col;
+
+  height: 100%;
+  .content {
+    flex: 1;
+  }
+}
+
+.navBar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.leftSide {
+  box-shadow: 0 0 4px 0 #e0e5f0;
+
+  .buttonBar {
+    padding: 10px;
+    background-color: #fff;
+    @include flex-row-center;
+  }
+
+  :global(.ant-layout-sider-children) {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+}
+
+.rightSide {
+  padding: 20px;
+  background-color: #f3f5f8;
+}

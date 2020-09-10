@@ -1,0 +1,106 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #304265 !important;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+article,
+aside,
+blockquote,
+body,
+button,
+dd,
+details,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+input,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+section,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #304265 !important;
+}
+
+.flex-col {
+  @include flex-col;
+}
+
+.flex-col-center {
+  @include flex-col-center;
+}
+
+.vertical-filled {
+  height: 100%;
+}
+
+#app {
+  @include flex-col;
+
+  height: 100%;
+  background-color: $fd-bgcolor;
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #ddd;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  outline: 1px solid #fff;
+  outline-offset: -2px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: #fff;
+  border-radius: 0;
+}

@@ -1,0 +1,17 @@
+.formItemControl {
+  :global {
+    .ant-tabs .ant-tabs-nav-wrap {
+      display: flex;
+      justify-content: center;
+    }
+    .ant-tabs-content-holder {
+      @include flex-row;
+
+      flex: 1;
+      overflow: hidden auto;
+      .ant-tabs-content .ant-tabs-content-top {
+        flex: 1;
+      }
+    }
+  }
+}

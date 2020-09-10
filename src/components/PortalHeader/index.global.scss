@@ -1,0 +1,29 @@
+.portal-header-wrapper {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: #{$nav-height};
+  padding: 0 16px;
+  color: #304265;
+  background: url('~@/assets/form-design-nav-bg.png');
+  background-position: 50%;
+  background-size: contain;
+  border-bottom: 1px solid #eee;
+  font: {
+    size: 16px;
+    weight: 400;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, #f9fafd, #e7eef8);
+    opacity: 0.9;
+    content: ' ';
+  }
+}

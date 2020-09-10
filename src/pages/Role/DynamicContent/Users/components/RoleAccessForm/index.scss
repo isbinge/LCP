@@ -1,0 +1,48 @@
+@import '../../common';
+
+.container {
+  @include flex-row;
+
+  .appAccessList {
+    flex-basis: 140px;
+    border: 1px solid #f0f0f0;
+    border-right: none;
+    & > :first-child {
+      width: 140px;
+      height: $form-header-height;
+      line-height: 44px;
+      background: #fafafa;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .appList {
+      overflow-y: auto;
+      background-color: #f9fafb;
+      @include flex-col;
+      .appItem {
+        height: 35px;
+        line-height: 35px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        cursor: pointer;
+
+        &[data-selected='true'] {
+          color: map-get($lcp-theme-color, 'primary');
+          background-color: #e5f1fa;
+        }
+        &[data-configured='true'] {
+          & > :last-child {
+            margin-left: 5px;
+          }
+        }
+        &[data-configured='false'] {
+          & > :last-child {
+            margin-left: 19px;
+          }
+        }
+      }
+    }
+  }
+  .accessContainer {
+    flex-basis: 85%;
+  }
+}

@@ -1,0 +1,42 @@
+.itemWrapper {
+  position: relative;
+  padding: 16px 24px;
+  border-bottom-color: $fd-bgcolor;
+  cursor: grabbing !important;
+  user-select: none;
+  border: {
+    width: 1px;
+    color: transparent;
+    style: solid;
+  }
+  &:hover {
+    background: #f6f8fc;
+  }
+  :global(.ant-input) {
+    cursor: grabbing !important;
+  }
+}
+
+.selected {
+  $selected-bg: #e9f3fd;
+  border: {
+    width: 1px;
+    style: dashed;
+    color: #107fff;
+  }
+
+  background: $selected-bg;
+  &:hover {
+    background: $selected-bg;
+  }
+}
+
+.placeholder {
+  @include flex-col-center;
+
+  flex: 1;
+}
+
+.wrapper {
+  @include flex-col;
+}

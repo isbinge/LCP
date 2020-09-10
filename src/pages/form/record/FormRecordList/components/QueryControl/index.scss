@@ -1,0 +1,21 @@
+.compWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .text {
+    min-width: 20%;
+    max-width: 20%;
+    overflow: hidden;
+    color: #304265;
+    font-size: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .compStyle {
+    display: flex;
+    flex: 1;
+    min-width: 100px;
+  }
+}

@@ -1,0 +1,14 @@
+.drawer {
+  :global(.ant-drawer-footer) {
+    padding: 10px 24px;
+  }
+}
+
+.bottomBar {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    color: #107fff;
+  }
+}

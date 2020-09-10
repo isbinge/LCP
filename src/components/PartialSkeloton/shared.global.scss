@@ -1,0 +1,20 @@
+.partial-skeloton {
+  .ant-skeleton {
+    width: unset;
+    .ant-skeleton-header {
+      padding-right: unset;
+    }
+    .ant-skeleton-content .ant-skeleton-title {
+      margin-top: unset;
+      margin-bottom: unset;
+      margin-block: {
+        start: unset;
+        end: unset;
+      }
+      margin-inline: {
+        start: unset;
+        end: unset;
+      }
+    }
+  }
+}

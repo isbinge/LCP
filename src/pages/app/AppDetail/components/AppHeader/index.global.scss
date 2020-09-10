@@ -1,0 +1,14 @@
+.tool-tips-container {
+  .ant-tooltip-inner {
+    background-color: rgba(83, 107, 155, 1);
+  }
+  .ant-tooltip-arrow::before {
+    background-color: rgba(83, 107, 155, 1);
+  }
+}
+
+.app-detail-create-form {
+  .ant-menu-item {
+    margin: 0;
+  }
+}

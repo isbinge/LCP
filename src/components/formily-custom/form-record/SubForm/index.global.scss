@@ -1,0 +1,37 @@
+.subTable {
+  .ant-table thead > tr > th {
+    background-color: #fff;
+  }
+  .ant-table thead > tr > th,
+  .ant-table tbody > tr > td {
+    padding: 8px;
+  }
+  .ant-table-tbody tr {
+    > :nth-child(1) {
+      background-color: #f9fbfd;
+    }
+  }
+  .ant-table-thead tr {
+    > :first-child {
+      background-color: #f9fbfd;
+    }
+  }
+  .greyCol {
+    background-color: #f9fbfd !important;
+  }
+}
+.subFormPopover {
+  .ant-popover-inner-content {
+    padding: 0;
+  }
+  .ant-list-items {
+    width: 160px;
+    .ant-list-item {
+      padding: 5px 8px;
+      cursor: pointer;
+      &:hover {
+        background-color: #e6f7ff;
+      }
+    }
+  }
+}

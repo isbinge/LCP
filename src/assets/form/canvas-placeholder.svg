@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="176px" viewBox="0 0 320 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>表单设计缺省图</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="49.8410101%" x2="0%" y2="49.7742982%" id="linearGradient-1">
+            <stop stop-color="#E1E5EB" offset="0%"></stop>
+            <stop stop-color="#DFE3E9" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="-1.0658141e-14" y="0" width="62" height="24" rx="2"></rect>
+        <filter x="-18.5%" y="-39.6%" width="137.1%" height="195.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.350919225   0 0 0 0 0.502210423   0 0 0 0 0.828068388  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="62" height="24" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="表单设计" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="表单设计1440_新建" transform="translate(-560.000000, -296.000000)">
+            <g id="Group-6" transform="translate(560.000000, 296.000000)">
+                <g id="表单设计缺省图">
+                    <rect id="Rectangle" fill="#E7EAEF" x="0" y="0" width="320" height="176" rx="6"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" x="5" y="30" width="74" height="141" rx="2"></rect>
+                    <rect id="Rectangle-Copy-18" fill="#FFFFFF" x="241" y="30" width="74" height="141" rx="2"></rect>
+                    <rect id="Rectangle-Copy-17" fill="#FFFFFF" x="84" y="30" width="152" height="141" rx="2"></rect>
+                    <rect id="Rectangle" fill="#DFEEFF" x="84" y="63" width="152" height="25"></rect>
+                    <rect id="Rectangle" fill="#DFEEFF" x="13" y="38.8571429" width="57" height="24" rx="2"></rect>
+                    <rect id="Rectangle-Copy-12" stroke="#F3F5F8" fill="#FFFFFF" x="250.5" y="39.3571429" width="56" height="23" rx="2"></rect>
+                    <rect id="Rectangle-Copy-6" stroke="#F3F5F8" fill="#FFFFFF" x="13.5" y="71.3571429" width="56" height="23" rx="2"></rect>
+                    <rect id="Rectangle-Copy-14" stroke="#F3F5F8" fill="#FFFFFF" x="250.5" y="71.3571429" width="56" height="23" rx="2"></rect>
+                    <rect id="Rectangle-Copy-7" stroke="#F3F5F8" fill="#FFFFFF" x="13.5" y="103.357143" width="56" height="23" rx="2"></rect>
+                    <rect id="Rectangle-Copy-15" stroke="#F3F5F8" fill="#FFFFFF" x="250.5" y="103.357143" width="56" height="23" rx="2"></rect>
+                    <rect id="Rectangle-Copy-13" stroke="#F3F5F8" fill="#FFFFFF" x="13.5" y="136.5" width="56" height="23" rx="2"></rect>
+                    <rect id="Rectangle-Copy-16" stroke="#F3F5F8" fill="#FFFFFF" x="250.5" y="136.5" width="56" height="23" rx="2"></rect>
+                    <g id="Group-2" transform="translate(241.142857, 29.714286)"></g>
+                    <path d="M6,0 L314,0 C317.313708,-6.08718376e-16 320,2.6862915 320,6 L320,25 L0,25 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="Rectangle" fill="url(#linearGradient-1)"></path>
+                    <circle id="Oval" fill="#FFFFFF" cx="17" cy="13" r="3"></circle>
+                    <circle id="Oval-Copy" fill="#FFFFFF" cx="29" cy="13" r="3"></circle>
+                    <circle id="Oval-Copy-2" fill="#FFFFFF" cx="41" cy="13" r="3"></circle>
+                    <g id="Group-5" transform="translate(39.142857, 46.857143)">
+                        <g id="o" stroke-dasharray="2">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use stroke="#74AEFF" mask="url(#mask-4)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <ellipse id="Oval" fill="#70ACFF" cx="11.8727915" cy="12" rx="2.82685512" ry="2.85714286"></ellipse>
+                        <rect id="Rectangle" fill="#70ACFF" x="19.2226148" y="9.14285714" width="33.9222615" height="5.71428571" rx="2.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

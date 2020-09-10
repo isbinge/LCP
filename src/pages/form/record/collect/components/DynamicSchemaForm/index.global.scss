@@ -1,0 +1,20 @@
+@import '../../shared/common';
+
+.form-schema {
+  color: $label-color;
+  .ant-row {
+    display: block;
+  }
+  .ant-form-item-no-colon {
+    color: $label-color;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .ant-form-item-control-wrapper {
+    font-size: 15px;
+  }
+
+  .ant-col.ant-form-item-control {
+    width: 100%;
+  }
+}

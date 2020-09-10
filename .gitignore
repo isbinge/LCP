@@ -1,0 +1,24 @@
+# Project
+/dist
+/coverage
+
+# Deps
+node_modules
+
+# Dev time files
+tmp/
+
+# Cache
+.eslintcache
+.awcache/
+
+# macOS
+.DS_Store
+
+# log file
+yarn-error.log
+
+# env file
+/.env
+
+/.vscode/launch.json

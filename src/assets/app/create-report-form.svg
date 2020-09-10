@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="120px" viewBox="0 0 90 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>chart_hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#99BDFF" offset="0%"></stop>
+            <stop stop-color="#99C9FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#99BDFF" offset="0%"></stop>
+            <stop stop-color="#99C9FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#99BDFF" offset="0%"></stop>
+            <stop stop-color="#99C9FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#99BDFF" offset="0%"></stop>
+            <stop stop-color="#99C9FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#99BDFF" offset="0%"></stop>
+            <stop stop-color="#99C9FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#99BDFF" offset="0%"></stop>
+            <stop stop-color="#99C9FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-7">
+            <stop stop-color="#99BDFF" offset="0%"></stop>
+            <stop stop-color="#99C9FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="迭代31" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="空白应用_悬停效果" transform="translate(-676.000000, -277.000000)">
+            <g id="Group-8-Copy-3" transform="translate(612.000000, 253.000000)">
+                <g id="chart_hover" transform="translate(64.000000, 24.000000)">
+                    <rect id="Rectangle-Copy-6" stroke="url(#linearGradient-1)" stroke-width="2" x="1" y="1" width="88" height="118" rx="4"></rect>
+                    <path d="M4,0 L86,0 C88.209139,-4.05812251e-16 90,1.790861 90,4 L90,16 L90,16 L0,16 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="Rectangle-Copy-7" fill="url(#linearGradient-2)"></path>
+                    <path d="M16,107.08 L16,86.92 C16,85.8596133 16.8954305,85 18,85 L22,85 C23.1045695,85 24,85.8596133 24,86.92 L24,107.08 C24,108.140387 23.1045695,109 22,109 L18,109 C16.8954305,109 16,108.140387 16,107.08 Z" id="Rectangle-Copy-8" fill="url(#linearGradient-3)"></path>
+                    <path d="M33,107.125 L33,95.875 C33,94.8394661 33.8954305,94 35,94 L39,94 C40.1045695,94 41,94.8394661 41,95.875 L41,107.125 C41,108.160534 40.1045695,109 39,109 L35,109 C33.8954305,109 33,108.160534 33,107.125 Z" id="Rectangle-Copy-9" fill="url(#linearGradient-4)"></path>
+                    <path d="M50,107.086957 L50,88.9130435 C50,87.8564987 50.8954305,87 52,87 L56,87 C57.1045695,87 58,87.8564987 58,88.9130435 L58,107.086957 C58,108.143501 57.1045695,109 56,109 L52,109 C50.8954305,109 50,108.143501 50,107.086957 Z" id="Rectangle-Copy-10" fill="url(#linearGradient-5)"></path>
+                    <path d="M67,107.125 L67,80.875 C67,79.8394661 67.8954305,79 69,79 L73,79 C74.1045695,79 75,79.8394661 75,80.875 L75,107.125 C75,108.160534 74.1045695,109 73,109 L69,109 C67.8954305,109 67,108.160534 67,107.125 Z" id="Rectangle-Copy-11" fill="url(#linearGradient-6)"></path>
+                    <ellipse id="Oval" fill="#AED4FF" opacity="0.400000006" cx="45" cy="52.5" rx="20" ry="20.5"></ellipse>
+                    <path d="M68,55 C68,40.6405965 57.7025492,29 45,29 L45,55 L68,55 Z" id="Path" stroke="#FFFFFF" stroke-width="2" fill="url(#linearGradient-7)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

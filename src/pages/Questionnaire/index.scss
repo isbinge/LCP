@@ -1,0 +1,17 @@
+.container {
+  .questionContent {
+    margin: 2em 30%;
+    > h2 {
+      margin: 36px 0 12px;
+    }
+    > ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .buttonGroups {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 40px;
+    }
+  }
+}

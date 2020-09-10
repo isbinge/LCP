@@ -1,0 +1,6 @@
+.displaySelect {
+  width: 100%;
+  :global(.ant-select-selector) {
+    background-color: #fff !important;
+  }
+}

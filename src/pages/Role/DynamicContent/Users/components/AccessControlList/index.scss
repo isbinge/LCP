@@ -1,0 +1,16 @@
+.accessTable {
+  .cell {
+    text-align: left;
+    .gutterRow {
+      padding: 8px 0;
+    }
+  }
+  .radio {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+  }
+  :global(.ant-table-thead .ant-table-cell) {
+    padding: 11px 16px;
+  }
+}

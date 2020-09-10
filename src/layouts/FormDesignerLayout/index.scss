@@ -1,0 +1,61 @@
+.left {
+  position: relative;
+  input {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 88px;
+    max-width: 220px;
+    height: 26px;
+    overflow: hidden;
+    line-height: 26px;
+    text-align: center;
+    text-overflow: ellipsis;
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #8893a7;
+    outline: none;
+  }
+  div {
+    visibility: hidden;
+  }
+}
+
+.center {
+  @include flex-row;
+
+  justify-content: center;
+  height: 100%;
+  font-weight: 500;
+  .actionList {
+    @include flex-row;
+
+    margin-bottom: 0;
+    list-style: none;
+    .tab {
+      height: 100%;
+      padding: 0 16px;
+      a {
+        @include flex-row-center;
+
+        height: 100%;
+        color: map-get($lcp-text-color, inactive);
+        text-align: center;
+      }
+      &[data-disabled] {
+        opacity: 0.5;
+        a {
+          cursor: not-allowed;
+        }
+      }
+      &:not([data-disabled]) {
+        &[data-checked='true'] {
+          a {
+            color: map-get($lcp-text-color, primary);
+            border-bottom: 3px solid #1890ff;
+          }
+        }
+      }
+    }
+  }
+}

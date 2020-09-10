@@ -1,0 +1,44 @@
+@mixin title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@mixin tree {
+  background-color: #f5f7fa;
+}
+
+.departmentBlock {
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  cursor: pointer;
+
+  .deptTag {
+    :global(.ant-tag) {
+      cursor: pointer;
+    }
+  }
+  .addDep {
+    color: #999;
+    cursor: pointer;
+    .plus {
+      margin-right: 5px;
+      color: map-get($lcp-theme-color, primary);
+    }
+  }
+  &[data-display-dept='true'] {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+  &[data-select-dept='true'] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.footerButtons {
+  justify-content: space-evenly;
+  @include flex-row;
+}

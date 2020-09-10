@@ -1,0 +1,78 @@
+.formRecordListDesign {
+  :global(.ant-form-item) {
+    margin-bottom: 16px;
+  }
+}
+
+.searchCond {
+  @include flex-row-center;
+
+  padding: 4px 0;
+  border-left: 4px solid transparent;
+  span {
+    @include tof;
+
+    margin: 0 4px;
+  }
+  &:hover {
+    background-color: #1e65ff0d;
+    border-left: 4px solid #1e65ffb2;
+    :global(.anticon) {
+      padding: 0;
+    }
+  }
+}
+
+.contentWrapper {
+  @include flex-row;
+
+  height: calc(100vh - 92px);
+  padding-top: 8px;
+  background-color: $fd-bgcolor;
+
+  .previewContainer {
+    flex: 1;
+
+    .title {
+      height: 30px;
+      padding-left: 15px;
+      color: #304265;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    .conditionPlaceholder {
+      @include flex-col-center;
+
+      width: 100%;
+      height: 44px;
+      overflow: hidden;
+      background-color: #fff;
+      border: 1px solid #e1e1e1;
+      border-color: #d4d7e0 !important;
+      border-radius: 2px;
+    }
+  }
+
+  .settingsContainer {
+    margin-left: 8px;
+    :global(.ant-tabs-nav .ant-tabs-tab) {
+      height: unset;
+    }
+    :global(.ant-tabs .ant-tabs-nav-scroll) {
+      display: flex;
+      justify-content: center;
+    }
+    :global(.ant-tabs .ant-tabs-tabpane) {
+      &:focus {
+        outline: unset;
+      }
+    }
+  }
+}
+
+.label {
+  color: map-get($lcp-text-color, primary);
+  font-weight: 500;
+}

@@ -1,0 +1,34 @@
+.buttonBar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  .blankSpace {
+    flex: 1;
+    margin: 6px auto;
+    border-left: solid 1px #ccc6;
+  }
+  .rightSectn {
+    display: flex;
+    flex-direction: row;
+    .saveButton {
+      width: 132px;
+      height: 100%;
+      padding: 0;
+      color: #fff !important;
+      line-height: 40px;
+      text-align: center;
+      background: #107fff;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      &:disabled {
+        box-shadow: none;
+        cursor: wait;
+        opacity: 0.65;
+        filter: alpha(opacity=65);
+        pointer-events: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import '../common';
+
+.container {
+  height: 100%;
+  padding: 20px;
+  background-color: #fff;
+  td span {
+    font-size: 14px;
+  }
+  .searchInput {
+    float: right;
+    width: 200px;
+  }
+  .identityTag {
+    margin-left: 5px;
+  }
+  .inviteAgain {
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #fff1f1;
+    @include flex-row;
+  }
+  .title {
+    @include title;
+  }
+}

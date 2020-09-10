@@ -1,0 +1,37 @@
+.selectRangeButton {
+  @include flex-row-center;
+  .textStyle {
+    @include tof;
+
+    display: inline-block;
+    width: 180px;
+    vertical-align: middle;
+  }
+}
+.displayFrame {
+  height: 84px;
+  margin-bottom: 5px;
+  padding: 4px;
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  overflow-y: auto;
+  border: 1px solid $neutral-border;
+}
+
+.selectFrame {
+  height: 350px;
+
+  :global(.ant-tabs-nav-scroll) {
+    text-align: center;
+  }
+
+  :global(.ant-tree-iconEle.ant-tree-icon__customize) {
+    color: map-get($lcp-theme-color, 'primary');
+  }
+
+  .range {
+    height: 260px;
+    overflow-y: auto;
+  }
+}

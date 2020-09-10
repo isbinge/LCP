@@ -1,0 +1,17 @@
+@import '../shared/header';
+
+.container {
+  display: flex;
+  height: 100%;
+  @include flex-col;
+  .schemaBody {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    .schemaInfo {
+      padding: 32px 16px;
+    }
+  }
+}

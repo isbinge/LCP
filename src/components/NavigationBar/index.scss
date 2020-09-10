@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:700&display=swap');
+
+.navWrapper {
+  @include flex-row-center;
+
+  position: relative;
+  flex: 1;
+  height: 100%;
+  .goBack {
+    @include flex-col-center;
+
+    width: 50px;
+    height: 100%;
+    border-right: 1px solid #e0e3e9b2;
+    cursor: pointer;
+
+    &:hover {
+      background: #ccd6e538;
+    }
+  }
+
+  .left {
+    display: inline-flex;
+    &[data-go-back] {
+      padding-left: 16px;
+    }
+  }
+
+  .link {
+    @include flex-row-center;
+
+    .logo {
+      height: 30px;
+    }
+
+    .text {
+      margin-left: 8px;
+      color: transparent;
+      letter-spacing: 0.3px;
+      background: linear-gradient(to top, #52bcf9, #2b77f4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      font: {
+        weight: bold;
+        size: 20;
+        family: 'Arvo', 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft Yahei',
+          'WenQuanYi Micro Hei', serif;
+      }
+    }
+  }
+
+  .center {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    transform: translate(-50%, 0);
+  }
+}

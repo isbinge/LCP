@@ -1,0 +1,98 @@
+@mixin cardHover($border, $cursor, $hover-border, $hover-imag-opacity: 0.5) {
+  border: $border;
+  cursor: $cursor;
+  img {
+    opacity: 0.5;
+  }
+  &:hover {
+    border: $hover-border;
+    img {
+      opacity: $hover-imag-opacity;
+    }
+  }
+}
+
+.cardList {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+  li {
+    float: left;
+    margin: 0 16px;
+  }
+}
+
+.cardContainer {
+  @include flex-col-center;
+
+  position: relative;
+  box-sizing: border-box;
+  width: 216px;
+  height: 262px;
+  color: map-get($lcp-text-color, 'primary');
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  box-shadow: $app-box-shadow;
+
+  @include cardHover(
+    2px solid transparent,
+    pointer,
+    2px solid map-get($lcp-theme-color, 'primary'),
+    1
+  );
+
+  .adjustImg {
+    width: 120px;
+    height: 120px;
+  }
+
+  .title {
+    margin-top: 10px;
+    // beta
+    span {
+      display: inline-block;
+      min-width: 32px;
+      height: 18px;
+      margin-left: 6px;
+      padding: 0 6px;
+      color: #107fff;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 18px;
+      text-align: center;
+      background: #e6f6ff;
+      border-radius: 9px;
+    }
+  }
+
+  .desc {
+    margin-top: 16px;
+    padding: 0 20px;
+    color: map-get($lcp-text-color, 'extra');
+    font-size: 12px;
+    text-align: center;
+  }
+  &[data-disabled] {
+    @include cardHover(2px solid transparent, not-allowed, 2px solid transparent);
+
+    opacity: 0.5;
+  }
+}
+
+.indicatorNew {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  display: block;
+  min-width: 24px;
+  height: 20px;
+  padding: 0 6px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  background: #ff4384;
+  border-radius: 12px;
+}
